@@ -4,8 +4,11 @@ import Homepage from '../pages/Homepage';
 import logo from '../../public/logo.png';
 import About from '../pages/AboutPage';
 import Services from '../pages/Services';
+import { Outlet, useNavigate } from 'react-router-dom';
 
 function Layout() {
+  const navigate = useNavigate()
+
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -24,16 +27,16 @@ function Layout() {
           </div>
           <ul className={`nav-links ${menuOpen ? 'show' : ''}`}>
             <li>
-              <div to="/">Home</div>
+              <div onClick={()=>navigate('/')}>Home</div>
             </li>
             <li>
-              <div to="/aboutus">About Us</div>
+              <div onClick={()=>navigate('/about')}>About Us</div>
             </li>
             <li>
-              <div to="/services">Services</div>
+              <div onClick={()=>navigate('/services')}>Services</div>
             </li>
             <li>
-              <div to="/contactus">Contact Us</div>
+              <div onClick={()=>navigate('/contact')}>Contact Us</div>
             </li>
           </ul>
         </nav>
@@ -41,7 +44,8 @@ function Layout() {
       <div className="">
         {/* <Homepage/> */}
         {/* <About /> */}
-        <Services/>
+        {/* <Services/> */}
+        <Outlet/>
       </div>
     </>
   );
