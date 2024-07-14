@@ -8,6 +8,9 @@
     flex-direction: column;
     margin-top: 10%;
   }
+  .about-content-text{
+    font-size: 1.3rem;
+  }
   
   .about-image-responsive {
     width: 100%;
@@ -45,6 +48,9 @@
       top: 10%;
       font-size: 1rem;
       padding: 5px;
+      width: 100%;
+      left: 50%;
+   
     }
   
     .underline-about {
@@ -61,6 +67,7 @@
       top: 15%;
       font-size: 1.5rem;
       padding: 10px;
+     
     }
   
     .underline-about {
