@@ -1,0 +1,71 @@
+/* homepage.css */
+.image-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .image-responsive {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translateX(-50%);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: Add text shadow for better readability */
+    font-size: 2rem;
+  }
+  .underline{
+    width: 386px;
+    height: 10px;
+    background-color: orange;
+  }
+  .s2-h{
+    font-size: 2rem;
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .image-responsive {
+      height: 100vh; /* Example for smaller screens */
+    }
+    
+    .overlay-text {
+      top: 30%;
+      left: 50%;
+      font-size: 3rem;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1200px) {
+    .image-responsive {
+      height: 100vh; /* Example for medium screens */
+    }
+  
+    .overlay-text {
+      top: 40%;
+      left: 50%;
+
+      font-size: 4rem;
+    }
+  }
+  
+  @media (min-width: 1201px) {
+    .image-responsive {
+      height: 100vh; /* Example for larger screens */
+    }
+  
+    .overlay-text {
+      top: 40%;
+      left: 40%;
+
+      font-size: 5rem;
+    }
+  }
+  
