@@ -3,6 +3,7 @@ import '../styles/navStyle.css';
 import Homepage from '../pages/Homepage';
 import logo from '../../public/logo.png';
 import About from '../pages/AboutPage';
+import Services from '../pages/Services';
 
 function Layout() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -39,7 +40,8 @@ function Layout() {
       </div>
       <div className="">
         {/* <Homepage/> */}
-        <About />
+        {/* <About /> */}
+        <Services/>
       </div>
     </>
   );

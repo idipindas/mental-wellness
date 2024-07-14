@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    background-color: #333;
+    background-color: transparent;
   }
   
   .logo img {
@@ -21,20 +21,20 @@
   }
   
   .nav-links li div {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     cursor: pointer;
     padding: 5px 10px;
   }
   
   .nav-links li div:hover {
-    background-color: #555;
+    background-color: #62c2ba70;
     border-radius: 5px;
   }
   
   .navbar .menu-icon {
     display: none;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 24px;
     cursor: pointer;
   }
@@ -47,7 +47,7 @@
       position: absolute;
       top: 60px;
       left: 0;
-      background-color: #8c8c8c;
+      background-color:transparent;
     }
   
     .nav-links li {
