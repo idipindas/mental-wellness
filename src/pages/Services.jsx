@@ -1,16 +1,23 @@
 import React from "react";
 import "../styles/serviceStyle.css";
 import cardimage from "../../public/home-image1.jpg";
+import Testimonials from "./Testimonials";
 
 function Services() {
   return (
     <div>
       <div className="">
-        <div className="d-flex justify-content-center">
+        {/* <div className="d-flex justify-content-center">
           <div className=" service-head">Services</div>
-          {/* <div className="underline-about "></div> */}
-        </div>
+        </div> */}
+
+        
       </div>
+
+      <div className=" mb-4">
+        <span className='col-12 d-flex justify-content-center ' style={{ fontSize:'2rem'}}>Services </span>
+        <div className="underline-about"></div>
+        </div>
       <div className="service-container">
         <div className="service-card">
           <img src={cardimage} alt="Service 1" />
@@ -64,6 +71,7 @@ function Services() {
           </div>
         </div>
       </div>
+      <Testimonials/>
     </div>
   );
 }
